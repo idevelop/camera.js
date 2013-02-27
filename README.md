@@ -1,35 +1,43 @@
 Camera.js
 ============
 
-This library offers access to browser camera input using the HTML5 getUserMedia API.
+A simple wrapper around the HTML5 getUserMedia API, offering cross-browser access to the user's webcam video stream. 
 
 ## Usage
 
-	camera.init({
-		width: 160,
-		height: 120,
-		fps: 30,
-		mirror: true,
+Upon initalization, the library asks the user for permission, sets up the necessary getUserMedia code and starts the stream. All parameters are optional, their default values are explained below.
 
-		onFrame: function(canvas) {
-			// do something with canvas
-		},
+The `onFrame` callback function is called each time there is a new frame to be processed, with respect to the `fps` option.
 
-		onSuccess: function() {
-			// stream succesfully started, yay!
-		},
+If you want the video stream to also be rendered in a `<canvas>` element, set the `targetCanvas` option to an element reference.
 
-		onError: function(error) {
-			// something went wrong on initialization
-		},
+```javascript
+camera.init({
+	width: 160, // default: 640
+	height: 120, // default: 480
+	fps: 30, // default: 30
+	mirror: true,  // default: false
+	targetCanvas: document.getElementById('webcam'), // default: null 
 
-		onNotSupported: function() {
-			// instruct the user to get a better browser
-		}
-	});
+	onFrame: function(canvas) {
+		// do something with image data found in the canvas argument
+	},
 
+	onSuccess: function() {
+		// stream succesfully started, yay!
+	},
 
-## Examples
+	onError: function(error) {
+		// something went wrong on initialization
+	},
+
+	onNotSupported: function() {
+		// instruct the user to get a better browser
+	}
+});
+```
+
+## Live examples
 
 * [ASCII Camera](http://idevelop.github.com/ascii-camera/)
 * [Predator Vision](http://idevelop.github.com/predator-vision/)
