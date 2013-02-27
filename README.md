@@ -39,8 +39,16 @@ camera.init({
 
 ## Live examples
 
-* [ASCII Camera](http://idevelop.github.com/ascii-camera/)
-* [Predator Vision](http://idevelop.github.com/predator-vision/)
+<table>
+  <tr>
+    <th>ASCII Camera</th>
+    <th>Predator Vision</th>
+  </tr>
+  <tr>
+    <td><a href="http://idevelop.github.com/ascii-camera/"><img src="http://idevelop.github.com/ascii-camera/images/screenshot.png" height="200"></a></td>
+    <td><a href="http://idevelop.github.com/predator-vision/"><img src="http://idevelop.github.com/predator-vision/images/screenshot.png" height="200"></a></td>
+  </tr>
+</table>
 
 ## Supported browsers
 
