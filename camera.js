@@ -63,7 +63,7 @@ var camera = (function() {
 			options.width = options.width || 640;
 			options.height = options.height || 480;
 			options.mirror = options.mirror || false;
-			options.targetCanvas = options.targetCanvas || null;
+			options.targetCanvas = options.targetCanvas || null; // TODO: is the element actually a <canvas> ?
 
 			options.onSuccess = options.onSuccess || doNothing;
 			options.onError = options.onError || doNothing;
