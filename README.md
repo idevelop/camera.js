@@ -45,8 +45,8 @@ camera.init({
     <th>Predator Vision</th>
   </tr>
   <tr>
-    <td><a href="http://idevelop.github.com/ascii-camera/"><img src="http://idevelop.github.com/ascii-camera/images/screenshot.png" height="200"></a></td>
-    <td><a href="http://idevelop.github.com/predator-vision/"><img src="http://idevelop.github.com/predator-vision/images/screenshot.png" height="200"></a></td>
+    <td><a href="http://idevelop.github.com/ascii-camera/"><img src="http://idevelop.github.com/ascii-camera/images/screenshot.png" width="267" height="200"></a></td>
+    <td><a href="http://idevelop.github.com/predator-vision/"><img src="http://idevelop.github.com/predator-vision/images/screenshot.png" width="278" height="200"></a></td>
   </tr>
 </table>
 
