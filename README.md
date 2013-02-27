@@ -38,6 +38,7 @@ This library offers access to browser camera input using the HTML5 getUserMedia 
 
 * Chrome &ge; 21
 * Firefox &ge; 17 (requires `media.navigator.enabled = true` in `about:config`)
+* Opera &ge; 12
 
 ## Author
 
