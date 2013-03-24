@@ -1,5 +1,5 @@
 Camera.js
-============
+=========
 
 A simple wrapper around the HTML5 getUserMedia API, offering cross-browser access to the user's webcam video stream. 
 
@@ -36,6 +36,8 @@ camera.init({
 	}
 });
 ```
+
+To pause the video capture, call `camera.pause()`. To resume, call `camera.start()`.
 
 ## Live examples
 
